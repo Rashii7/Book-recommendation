@@ -20,6 +20,8 @@ app.config['MYSQL_DATABASE_DB'] = 'book_recommend'
 app.config['MYSQL_DATABASE_HOST'] = 'localhost'
 mysql.init_app(app)
 
+
+
 @app.route('/')
 def login():
    return redirect(url_for('login_validation'))
