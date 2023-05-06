@@ -41,6 +41,7 @@ def login_validation():
 
             cursor = conn.cursor()
             result = cursor.execute("SELECT * FROM user WHERE username = %s AND password = %s", (username, password))
+
             return redirect(url_for('home'))
         else:
             return 'abe ssaale'
