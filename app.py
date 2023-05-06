@@ -34,6 +34,7 @@ def login_validation():
         password = request.form['password']
         if username and password:
 
+
             # return json.dumps({"message":_name})
 
             conn = mysql.connect()
