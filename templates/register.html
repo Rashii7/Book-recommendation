@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book Recommendation System Login</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
+	<style>
+		.container {
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			max-width: 500px;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Welcome to Book Recommendation System</h1>
+	</header>
+	<main>
+		<div class="container">
+			<form>
+				<label >Name</label><br>
+				<input type="text"> <br><br>
+				<label for="username">Username:</label>
+				<input type="text" id="username" name="username"><br><br>
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password"><br><br>
+				<input type="submit" value="Log in">
+			</form>
+			<p>Already a member? <a href="/">Login Here</a></p>
+		</div>
+	</main>
+	<footer>
+		<p>&copy; 2023 Book Recommendation System. All rights reserved.</p>
+	</footer>
+</body>
+</html>
